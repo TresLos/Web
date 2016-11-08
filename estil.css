@@ -1,0 +1,121 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width:100%;
+	font-size:1em; /* Tamany per defecte: http://www.w3schools.com/TAgs/ref_pxtoemconversion.asp */
+}
+/* Ens explica que és el: border|padding|margin */
+/* margin "espai imaginari" border "frontera entre margin i padding" padding, espai suposat real teu */
+
+/* background-image:url(objetos/fondo.png) imatge de fons. */
+/* background-repeat:no-repeat|repeat-x|repeat-y|repeat;  Fer que l'imatge no es repeteixi*/
+/* background-position:left bottom|top|center|right|50px 100px*/
+/* background-attachment:fixed|scroll */
+/* height:100%; Possible error de firefox sense aixo */
+body
+{
+	background-color: #404050;
+	background: -webkit-canvas(mybackground);
+	background-attachment: fixed;
+}
+/* M'agradaria poder generar una imatge amb el .js, així gastar molt poca memòria */
+
+/* Idea, canvas :) Substitut de la fotografia. */
+/* Fotografia: src, width, height, alt
+
+/* Foto: img {border-style:none;} */
+
+/* Text: p {text-align:center|left|right|justify;} */
+p
+{
+	text-align:justify;
+	width: 98%;
+}
+
+p:title
+{
+	color:red;
+}
+
+/* .centrado {text-align:center;} */ /* ==> <p class="centrado"> ... */
+
+/* Copi past de CCTW */
+h1 {font-size:2em; color:white; font-weight:bold; text-decoration:underline; text-align:center;}
+h2 {font-size:1.1em; color:blue; font-weight:bold; text-decoration:none; text-align:center;}
+
+a
+{
+	color:brown;
+	font-size:1.3em;
+	text-decoration:none;
+}
+a:link
+{
+	color:red;
+}
+a:visited
+{
+	color:white;
+}
+a:hover
+{
+	color:yellow;
+	text-decoration:underline;
+	background-color: silver;
+}
+a:active
+{
+	color:magenta;
+}
+
+div
+{
+	border: black 1px solid;
+}
+
+/* Etiquetes per id="..." 'unics'*/
+#cap
+{
+	background-color:green;
+	color:white;
+}
+#navegacio
+{
+	background-color:gray;
+}
+#contingut
+{
+	background-color:orange;
+}
+#contingut p
+{
+	padding: 1%;
+	text-indent: 15px; /* Línia molt útil, pots apreciar com tabular la primera paraula!! */
+}
+#menu
+{
+	background-color:yellow;
+	width:130px;
+	float:left;
+	margin: 3px 10px 3px 3px;
+/*	margin-right:10px; * Per donar espai desitjat al text de la dreta */
+}
+#menu li
+{
+	list-style: none;
+	margin:0px 0px 0px 6px;
+}
+#peu
+{
+	background-color:brown;
+	float:bottom;
+}
+#global
+{
+	width: 98%;
+	margin: auto; /* Centrar el tot */
+}
+
+/* div { background: -webkit-canvas(squares); width:600px; height:40px; border:2px solid black }*/
