@@ -88,10 +88,11 @@ div
 #contingut
 {
 	background-color:orange;
+	min-height: 155px;
 }
 #contingut p
 {
-	padding: 1%;
+	padding: 10px;
 	text-indent: 15px; /* Línia molt útil, pots apreciar com tabular la primera paraula!! */
 }
 #menu
