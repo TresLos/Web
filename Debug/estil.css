@@ -1,0 +1,47 @@
+body
+{
+	background-color:black;
+}
+
+div
+{
+}
+
+.inputoutput
+{
+	background-color:green;
+	height: 40%;
+}
+
+.input
+{
+	background-color:orange;
+	float:left;
+}
+
+.output
+{
+	background-color:silver;
+	float:right;
+}
+
+.inou
+{
+/*	border-radius: 70%; */
+	width: 45%;
+
+}
+
+
+
+#canvas
+{
+	background-color: silver;
+
+/* Totes dues per a centar */
+	margin:auto;
+	display: block;
+
+	width: 90%;
+	border-radius: 50%;
+}
