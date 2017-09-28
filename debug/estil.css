@@ -1,0 +1,40 @@
+*
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+	width:100%;
+	font-size:1em;
+}
+
+body
+{
+	background-color: green;
+}
+
+#global
+{
+	background-color: #303D40;
+	width:100%;
+}
+
+#contingut
+{
+}
+
+#draw
+{
+	background-color: #AA3030;
+}
+
+#canvas
+{
+	background-color: white;
+	width:40%;
+	margin:50px 30%;
+}
+
+#resposta
+{
+	background-color: magenta;
+}

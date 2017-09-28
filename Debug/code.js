@@ -10,7 +10,7 @@ var	TLcontext,
 
 function drawArrow () {
 /* Anem al lloc */
-	TLcontext.translate ( TLarrowwidth, TLarrowheight);
+	TLcontext.clearRect(-TLwidth, -TLheight, TLwidth, TLheight);
 	TLcontext.rotate (TLarrowAngle);
 
 	TLcontext.beginPath ();
@@ -22,23 +22,25 @@ function drawArrow () {
 	TLcontext.stroke ();
 
 	TLcontext.restore ();
-console.log ("canvi");
 
+
+requestAnimationFrame(drawArrow);
 }
 window.onload = function() {
 /* Inicialitzem les variables. */
 	TLcanvas = document.getElementById ("canvas");
 	TLcontext = canvas.getContext ("2d");
 
-	canvas.width = window.innerWidth;
-	canvas.height = window.innerHeight;
+	TLwidth = canvas.width = window.innerWidth;
+	TLheight =canvas.height= window.innerHeight;
 
-	TLarrowwidth = canvas.width/2;
-        TLarrowheight =canvas.height/2;
+	TLarrowwidth = TLwidth/2;
+        TLarrowheight= TLheight/2;
 
 
 	TLarrowAngle = Math.PI/9;
 
+	TLcontext.translate ( TLarrowwidth, TLarrowheight);
 	drawArrow ();
 
 TLcanvas.addEventListener('click', function(event) {

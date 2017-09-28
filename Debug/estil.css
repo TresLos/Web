@@ -21,7 +21,7 @@ div
 
 .output
 {
-	background-color:silver;
+	background-color:aqua; /* rgb red green blue */
 	float:right;
 }
 
